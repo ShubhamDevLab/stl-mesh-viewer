@@ -1,17 +1,18 @@
 # STL Viewer (OpenGL)
 
-A lightweight STL file viewer built using C++ and OpenGL.
-This project focuses on rendering 3D geometry, parsing STL files, and building a basic CAD-style viewer.
+A lightweight STL file viewer built using C++, OpenGL, and MFC.
+This project focuses on rendering 3D geometry, parsing STL files, and building a basic CAD-style desktop viewer.
 
 ---
 
 ## 🚀 Features
 
 * Supports ASCII & Binary STL files
-* Real-time 3D rendering using OpenGL
+* Real time 3D rendering using OpenGL
 * Camera controls (zoom, rotate, pan)
-* Shader-based pipeline (GLSL)
+* Shader based pipeline (GLSL)
 * Efficient mesh handling using VAO & VBO
+* Desktop UI built with MFC (Microsoft Foundation Classes)
 
 ---
 
@@ -23,6 +24,22 @@ This project focuses on rendering 3D geometry, parsing STL files, and building a
 * GLAD
 * GLM
 * stb
+* MFC (for UI framework)
+
+---
+
+## 🖥️ UI Framework
+
+The application uses **MFC (Microsoft Foundation Classes)** to build a native Windows desktop interface.
+
+Key UI components:
+
+* Main frame window (`MainFrm`)
+* Dockable panels (`MyDockablePane`)
+* Rendering view (`STLReflectView`)
+* Properties panel (`PropertiesWnd`)
+
+This provides a structured CAD like interface along with OpenGL rendering.
 
 ---
 
@@ -43,7 +60,7 @@ Libraries/      → External dependencies (ignored in Git)
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/YOUR_USERNAME/STL-Viewer.git
+git clone https://github.com/ShubhamDevLab/stl-mesh-viewer.git
 ```
 
 ---
@@ -78,6 +95,7 @@ Then download and place:
 ### 3. Open Project
 
 * Open `STLReflect.sln` in Visual Studio
+* Make sure MFC is installed in Visual Studio
 * Build and run 🚀
 
 ---
@@ -86,7 +104,7 @@ Then download and place:
 
 * Lighting (Phong / PBR)
 * Wireframe mode
-* GUI using ImGui
+* GUI enhancements (ImGui integration or advanced MFC UI)
 * Drag & drop STL loading
 * Model transformations
 
@@ -94,7 +112,12 @@ Then download and place:
 
 ## 📸 Preview
 
-(Add screenshots here)
+<p align="center">
+  <img src="snapshot/1.png" width="400"/>
+  <img src="snapshot/2.png" width="400"/>
+  <img src="snapshot/3.png" width="400"/>
+  <img src="snapshot/4.png" width="400"/>
+</p>
 
 ---
 
