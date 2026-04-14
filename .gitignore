@@ -1,0 +1,17 @@
+Libraries/*
+!Libraries/README.md
+# Build files
+Debug/
+Release/
+Libraries/
+x64/
+*.obj
+*.exe
+*.out
+
+# VS files
+*.user
+*.aps
+*.pch
+*.ilk
+*.pdb
