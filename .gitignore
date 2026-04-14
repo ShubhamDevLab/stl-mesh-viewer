@@ -3,7 +3,6 @@ Libraries/*
 # Build files
 Debug/
 Release/
-Libraries/
 x64/
 *.obj
 *.exe
